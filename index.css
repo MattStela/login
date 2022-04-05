@@ -1,24 +1,31 @@
-body{
+body {
     background-color: black;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* exemplo de como colocar o background perfeito de fundo */
+    background-image: url(./images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.background_index{
+.background_index {
     width: 100%;
     height: 100%;
 }
 
-.div_pai_login{
+.div_pai_login {
     width: 50%;
-    height: 50%;
+    height: 300px;
 }
 
-.barrinha_preta{
+.barrinha_preta {
     background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: #00000050; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 10%;
@@ -29,8 +36,8 @@ body{
     padding-right: 10%;
 }
 
-.bolinha{
-    width: 10px;
+.bolinha {
+    width: 15px;
     height: 10px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.7);
@@ -39,7 +46,7 @@ body{
     margin-right: 1%;
 }
 
-.barrinha{
+.barrinha {
     width: 100%;
     height: 10px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -48,8 +55,8 @@ body{
     margin-right: 1%;
 }
 
-.conteudo{
-    height:93%;
+.conteudo {
+    height: 100%;
     background-color: rgb(255, 255, 255, 0.5);
     display: flex;
     align-items: center;
@@ -57,7 +64,7 @@ body{
     flex-direction: column;
 }
 
-.campos{
+.campos {
     margin-top: 1%;
     margin-bottom: 1%;
     background-color: rgb(0, 0, 0, 0.5);
@@ -72,31 +79,43 @@ body{
     align-items: center;
 }
 
-.botoes{
-    display:flex;
+.botoes {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 25%;
 }
 
-.botao{
+.botao {
     margin-left: 2%;
     margin-right: 2%;
     background-color: rgb(0, 0, 0, 0.5);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255, 0.5);
     width: 30%;
     height: 50%;
     text-align: center;
     border-radius: 50px;
     border: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    cursor: auto;
 }
 
-.botao:hover{
+#finalizar_cadastro{
+    background-color: rgb(255, 2, 2,0.5);
+}
+
+.botao:hover {
     color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0, 0.8);
+    transition: all 0.3s ease-out;
 }
 
+#finalizar_cadastro:hover{
+    color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(255, 2, 2,0.5);
+    transition: all 0.3s ease-out;
+}
 
 input[type=text], input[type=password] {
     background-color: rgb(0, 0, 0, 0);
@@ -105,5 +124,17 @@ input[type=text], input[type=password] {
     padding: 12px 20px;
     border: 1px solid rgb(0, 0, 0, 0);
     box-sizing: border-box;
-  }
+    outline: none;
+}
 
+.ttl_form {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #00000080
+}
+
+.text_inputs {
+    font-weight: bold;
+    width: 15%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

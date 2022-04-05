@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+    <section class="div_pai_login" style="position:absolute;">
+        <div class="barrinha_preta">
+            <div class="bolinha"></div>
+            <div class="bolinha"></div>
+            <div class="bolinha"></div>
+            <div class="barrinha"></div>
+        </div>
+
+        <div class="conteudo">
+            <h1 class="ttl_form" id="ttl_cadastro">
+                Cadastre-se :D
+            </h1>
+
+            <!-- nome -->
+            <div class="campos">
+                <label class="text_inputs" id="label_nome">nome</label>
+                <input required size="35%" id="input_nome" type="text" name="nome">
+            </div>
+
+            <!-- campo usuário -->
+            <div class="campos">
+                <label class="text_inputs" id="label_usuario">usuário</label>
+                <input required  size="35%" id="input_usuario" type="text" name="usuario">
+            </div>
+
+            <!-- campo senha -->
+            <div class="campos">
+                <label class="text_inputs" id="label_senha">senha</label>
+                <input required size="35%" id="input_senha" type="password" name="senha">
+            </div>
+
+            <!-- botões -->
+            <div class="botoes">
+                <button class="botao" onclick="window.location.href='../index.html'">Voltar</button>
+                <button onclick='finalizarCadastro()' class="botao" id="finalizar_cadastro">finalizar cadastro</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+
+</body>
+
+</html>

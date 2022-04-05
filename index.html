@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./mobile/700px_mobile.css">
+    <script src="./index.js"></script>
 </head>
 
 <body>
-    <div class="background_index">
-        <img width="100%" height="100%" src="./images/background2.jpg" alt="">
-    </div>
-
     <section class="div_pai_login" style="position:absolute;">
         <div class="barrinha_preta">
             <div class="bolinha"></div>
@@ -23,6 +20,9 @@
             <div class="barrinha"></div>
         </div>
         <div class="conteudo">
+            <h1 class="ttl_form">
+                Faça o login aí, meu camarada :D
+            </h1>
             <div class="campos">
                 <img width="15px" src="./icons/login.png" alt="login_icon">
                 <input size="35%" class="inpt" type="text" name="login">
@@ -33,7 +33,7 @@
             </div>
             <div class="botoes">
                 <button class="botao">Entrar</button>
-                <button class="botao">registrar</button>
+                <button class="botao" onclick="window.location.href='./view/cadastro.html'" >registrar</button>
             </div>
         </div>
     </section>
